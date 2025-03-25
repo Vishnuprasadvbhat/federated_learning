@@ -81,11 +81,11 @@ if __name__ == '__main__':
 
     # Load the quantized model and tokenizer
     model_path = "D:\\fed_up\\NEW_INCRE\\client_model"
-    quatized_model_path = 'D:\\fed_up\\Quantized' 
-    model, tokenizer = load_model(quatized_model_path)
+    # quatized_model_path = 'D:\\fed_up\\Quantized' Use this path, if you want to evaluate quanitzed model.
+    model, tokenizer = load_model(model_path)
 
     # Run the evaluation
-    final_acc = evaluate_model(model, tokenizer, dataset_name="imdb", batch_size=16)
+    final_acc = evaluate_model(model, tokenizer, dataset_name="imdb", batch_size=32)
 
     print(f"Final Accuracy: {final_acc:.4f}")
 
@@ -94,6 +94,8 @@ if __name__ == '__main__':
     Accuracy at batch 1563: 0.7661
     Final Model Accuracy: 0.7661
     Final Accuracy: 0.7661
+
+    
 
     '''
     
