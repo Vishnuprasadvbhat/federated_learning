@@ -13,7 +13,7 @@ Ensure you have the following installed:
 - Matplotlib (for visualization)
 - Flower (for federated learning)
 
-## Running the Server and Clients
+## Running the Server and Clients in different terminals
 1. Start the federated learning server:
    ```bash
    python server.py
@@ -144,6 +144,9 @@ INFO :      [SUMMARY]
 INFO :      Run finished 1 round(s) in 1648.12s
 INFO :          History (metrics, distributed, fit):
 INFO :          {'loss': [(1, 0.43657074868679047)]} 
+INFO :          History (metrics, distributed, evaluate):
+INFO :          {'accuracy': [(1, 0.7654)]}
+
 ```
 
 
@@ -181,7 +184,6 @@ Once training is completed, you should see logs indicating loss stabilization an
 
 ---
 
-**Timestamp:** 2025-03-25 23:31:45,629  
 - INFO: Prediction made.  
   - **Predicted:** 1  
   - **Validation:** **False**
@@ -190,17 +192,44 @@ Once training is completed, you should see logs indicating loss stabilization an
 
 ---
 
-### Incremental Training Process:
-1. **Epoch [0]:**  
-   - Loss: `2.2599`   
+## Prediction and Incremental Training Process
 
-2. **Epoch [19]:**  
-   - Loss: `0.7958`    
+#### User Input:
+**Sentence for prediction:**  
+*movie ain't that good* 
 
----
+#### Prediction Validation:
+- **Predicted Sentiment:** 1 (Positive)  
+- **Actual Sentiment:** 0 (Negative)  
 
-**Final Note:**  
-Incremental training was successfully completed with user input.
+#### Training Iterations:
+| Epoch | Loss |
+|-------|------|
+| 0     | 1.4709 |
+| 1     | 1.0982 |
+| 2     | 1.1243 |
+| 3     | 1.4112 |
+| 4     | 1.2369 |
+| 5     | 0.9178 |
+| 6     | 0.8297 |
+| 7     | 0.6471 |
+| 8     | 0.3594 |
+| 9     | 0.3049 |
+| 10    | 0.4609 |
+| 11    | 0.4915 |
+| 12    | 0.1543 |
+| 13    | 0.1613 |
+| 14    | 0.2610 |
+| 15    | 0.1723 |
+| 16    | 0.1962 |
+| 17    | 0.1253 |
+| 18    | 0.1283 |
+| 19    | 0.1198 |
+
+#### Completion Status:
+**Incremental training completed with user input.**
+
+
 ### Performance Benchmarks
 - Training time per round: ~1600s
 - Loss after 1 round: ~0.43
