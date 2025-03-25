@@ -271,7 +271,19 @@ Once training is completed, you should see logs indicating loss stabilization an
   - Refine the federated learning strategy.
 
 ### Saved Model Accuracy
-![Saved Model Accuracy](plots/Saved%20Client%20Model%20Accuracy.png)
+
+    Batch Size: 16 
+    Accuracy at batch 1563: 0.7661
+    Final Model Accuracy: 0.7661
+    Final Accuracy: 0.7661
+
+    Batch size: 32
+    Accuracy at batch 782: 0.7906
+    Final Model Accuracy: 0.7906
+    Final Accuracy: 0.7906
+
+![Saved Model Accuracy (Batch-32)](plots/Saved%20Client%20Model%20Accuracy.png) Batch 32 Total Batch Count 782 Accuracy 0.7906
+
 ### Observations from the Graph
 
 #### Initial Fluctuations:
