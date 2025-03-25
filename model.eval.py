@@ -95,7 +95,10 @@ if __name__ == '__main__':
     Final Model Accuracy: 0.7661
     Final Accuracy: 0.7661
 
-    
+    Batch size: 32
+    Accuracy at batch 782: 0.7906
+    Final Model Accuracy: 0.7906
+    Final Accuracy: 0.7906
 
     '''
     
