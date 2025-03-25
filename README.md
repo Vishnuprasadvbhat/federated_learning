@@ -282,9 +282,11 @@ Once training is completed, you should see logs indicating loss stabilization an
     Final Model Accuracy: 0.7906
     Final Accuracy: 0.7906
 
-![Saved Model Accuracy (Batch-32)](plots/Saved%20Client%20Model%20Accuracy.png) Batch 32 Total Batch Count 782 Accuracy 0.7906
+![Saved Model Accuracy (Batch-32)](plots/Saved%20Client%20Model%20Accuracy.png) 
 
-### Observations from the Graph
+Batch 32 Total Batch Count 782 Accuracy 0.7906
+
+### Observations from the Graphs
 
 #### Initial Fluctuations:
 - Accuracy is highly unstable at the beginning due to weight adjustments during early training.
