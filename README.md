@@ -219,7 +219,7 @@ Incremental training was successfully completed with user input.
 - Possible causes: catastrophic forgetting, data distribution shift, overfitting, or learning rate issues.  
 
 ### Federated Learning Client Model Accuracy: 
-![Client Model Accuracy](plots/Federated%20Client%20Model%20Accuracy.png)
+![Client Model Accuracy](plots/federated_learning_models.png)
 
 #### Observation of a Federated Client Model
 
